@@ -1,0 +1,162 @@
+html {
+    box-sizing: border-box;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+#content {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.bot0 {
+    background: rgba(231, 231, 231, 0.15) none repeat scroll 0 0;
+    float: left;
+    clear: left;
+    vertical-align: top;
+    border-top: darkgrey dotted;
+    display: inline-block;
+}
+
+.bot1 {
+    background: rgba(231, 231, 231, 0.15) none repeat scroll 0 0;
+    float: left;
+    clear: left;
+    vertical-align: top;
+    border-top: darkgrey dotted;
+    display: inline-block;
+}
+
+.bot_img0 {
+    height: 50px;
+}
+
+.bot_img1 {
+    height: 50px;
+}
+
+.bot_img_div0 {
+    /*display: inline-block; */
+    float: left;
+    padding: 1px;
+    margin-right: 10px;
+}
+
+.bot_img_div1 {
+    float: right;
+    padding: 1px;
+    margin-left: 10px;
+}
+
+.bot0 p {
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 0;
+    color: black;
+    padding: 1px 10px 5px 12px;
+
+}
+
+.bot1 p {
+    border-radius: 3px;
+    color: black;
+    font-size: 14px;
+    margin: 0;
+    padding: 1px 10px 5px 12px;
+    width: 100%;
+}
+
+.speaker-id0 {
+    font-weight: bold;
+}
+
+.speaker-id1 {
+    font-weight: bold;
+}
+
+#dialogue-content {
+    margin: 5px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.next_turn {
+    display: inline-block;
+    float: left;
+}
+
+.bot_inactive_turn {
+    display: none;
+}
+
+.is_not_last_turn {
+    display: none;
+}
+
+.is_not_dialogue_end {
+    display: none;
+}
+
+.submission_div {
+    display: none;
+}
+
+#instruction-text-hidden {
+    display: none;
+}
+
+
+#root_black {
+    background: rgba(0,0,0,0.67);
+}
+
+.root_green {
+    background: rgba(13,142,7,0.67);
+}
+
+.root_yellow_green {
+    background: rgba(154, 205, 50, 0.91);
+}
+
+.root_yellow {
+    background: rgba(207,209,0,0.99);
+}
+
+.root_red {
+    background: rgba(209,6,0,0.99);
+}
+
+.root_darkred {
+    background: rgba(125,6,0,0.99);
+}
+
+.red_score{
+    color: red;
+}
+
+.green_score{
+    color: lawngreen;
+}
+
+.row_BASELINE{
+    background: green;
+}
+
+.row_MINIMAL-BASELINE{
+    background: red;
+}

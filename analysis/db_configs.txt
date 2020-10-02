@@ -1,0 +1,11 @@
+"package_collection_name": "packed-dialogues-full-dailydialog",
+"sampled_collection_name": "sampled-dialogues-full-dailydialog",
+"labelled_collection_name": "annotated-dialogues-full-dailydialog"
+
+"package_collection_name": "packed-dialogues-full-empathetic",
+"sampled_collection_name": "sampled-dialogues-full-empathetic",
+"labelled_collection_name": "annotated-dialogues-full-empathetic"
+
+"package_collection_name": "packed-dialogues-full-convai2",
+"sampled_collection_name": "sampled-dialogues-full-convai2",
+"labelled_collection_name": "annotated-dialogues-full-convai2"
