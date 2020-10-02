@@ -35,6 +35,16 @@ Adapt the `config/annotation_app.json ` file as follows:
 ## Run the Annotation Tool
 After you cloned the repository `cd/autojudge_annotaiton`:
 
+To run the annotation tool: 
+```bash
+$ python run.py
+```
+
+You can access the tool at `localhost:5003`
+
+## Ranking
+After you cloned the repository `cd/autojudge_annotaiton`:
+
 To get the Rankings based on Bootstrap Sampling (Table 1):
  ```bash
 $ python templates\src\segment_analysis\segmented_bootstrap_sampling.py
@@ -53,8 +63,6 @@ To perform the leave-one-out experiment (Figure 3b):
  ```bash
 $ python templates\src\segment_analysis\ranking_significance.py -lo 1
 ```
-
-## Ranking
 
 ## Survival Analysis
 
