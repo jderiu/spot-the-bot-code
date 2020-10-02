@@ -71,6 +71,14 @@ Finally, run the R script at `analysis/survival.R`.
 
 ## IAA
 
+To run the label agreement analysis on e.g. the convai2 annotations, run
+
+```back
+$ python analysis/inter_annotator_agreement.py sampled-dialogues-full-convai2.json
+```
+
+The annotations are stored in `data_dump/MongoDump.zip`
+
 ## References
 If you use this code, please cite us:
 

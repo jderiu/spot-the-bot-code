@@ -130,7 +130,9 @@ def label_agreement(convos: List) -> None:
 
 
 def win_function_agreement(convos: List) -> None:
+
     agreement_ratios = defaultdict(list)
+
     for convo in convos:
 
         bot_0 = convo['system_type0']
@@ -170,39 +172,12 @@ def win_function_agreement(convos: List) -> None:
 
 if __name__ == '__main__':
     import sys
-    sys.path.append('./')
-
-    """
-    from templates.src.segment_analysis.annotator_scores import get_all_annotated_convos
-    from templates.src.segment_analysis.fooling_analysis import name_mapping_domain
-    convos = get_all_annotated_convos()
-    # cast convos[id]['annotations'] as dict to pickle it
-    """
     import json
-    convos = json.load(open('/home/don/projects/spot_the_bot/autojudge-annotation/data/sampled-dialogues-full-convai2.json'))
+    conversation_json_file = sys.argv[1]  # e.g. sampled-dialogues-full-convai2.json in ../data_dump/MongoDump.zip
+    convos = json.load(open(conversation_json_file))
 
     label_agreement(convos)
-    feature_agreement(convos)
+
+    # Not used in the paper:
+    # feature_agreement(convos)
     # win_function_agreement(convos)
-
-    """
- "package_collection_name": "packed-dialogues-full-dailydialog",
-"sampled_collection_name": "sampled-dialogues-full-dailydialog",
-"labelled_collection_name": "annotated-dialogues-full-dailydialog"
-
-"package_collection_name": "packed-dialogues-full-empathetic",
-"sampled_collection_name": "sampled-dialogues-full-empathetic",
-"labelled_collection_name": "annotated-dialogues-full-empathetic"
-
-"package_collection_name": "packed-dialogues-full-convai2",
-"sampled_collection_name": "sampled-dialogues-full-convai2",
-"labelled_collection_name": "annotated-dialogues-full-convai2"
-
-"package_collection_name": "packed-dialogues-full-sota",
-"sampled_collection_name": "sampled-dialogues-full-sota",
-"labelled_collection_name": "annotated-dialogues-full-sota",
-
-"package_collection_name": "packed-dialogues-amt-tournament3-dailydialog",
-"sampled_collection_name": "sampled-dialogues-amt-tournament3-dailydialog",
-"labelled_collection_name": "annotated-dialogues-amt-tournament3-dailydialog"
-    """
