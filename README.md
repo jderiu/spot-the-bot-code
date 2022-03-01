@@ -94,7 +94,7 @@ If you use this code, please cite us:
 @inproceedings{deriu2020spot_the_bot,
   title = {{Spot The Bot: A Robust and Efficient Framework for the Evaluation of Conversational Dialogue Systems}},
   author = {Deriu, Jan and Tuggener, Don and von D{\"a}niken, Pius and Campos, Jon Ander and Rodrigo, Alvaro and, Belkacem, Thiziri and Soroa, Aitor and Agirre, Eneko and Cieliebak, Mark},
-  booktitle = {Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics},
-  address = {Dublin},
-  year = {2022},
+  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  address = {Online},
+  year = {2020},
 }
